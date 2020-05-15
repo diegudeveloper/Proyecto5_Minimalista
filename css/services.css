@@ -84,5 +84,19 @@
     letter-spacing: 2px;
 }
 
+/*****media queri*****/
+
+@media screen and (max-width: 768px) {
+
+    .services .container_card .card {
+        width: 5%;
+    }
+
+    .services .container_card .line {
+        width: 100%;
+        padding: 0;
+    }
+}
+
 
 

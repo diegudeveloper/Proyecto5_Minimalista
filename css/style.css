@@ -161,3 +161,65 @@ header .intro .year {
     font-size: 32px;
     font-weight: 700;
 }
+
+/*****media queri*****/
+
+@media screen and (max-width: 950px) {
+    header .intro .star2 {
+        font-size: 16px;
+    }
+
+    header .intro .ptex {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        height: 60vh;
+    }
+
+    header .banner {
+        height: 60vh;
+    }
+
+    header .banner img {
+        height: 60vh;
+    }
+
+    header .intro {
+        width: 100%;
+        left: 0;
+    }
+
+    header .intro .ptex {
+        font-weight: 700;
+        color: #fff;
+    }
+
+    header .intro .year {
+        color: #fff;
+        font-weight: 300;
+        letter-spacing: 3px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    header .intro .textstar {
+        font-size: 14px;
+    }
+
+    header .intro .main {
+        font-size: 20px;
+    }
+
+    header .intro .star2 {
+        font-size: 16px;
+    }
+
+    header .intro .star3 {
+        width: 20px;
+    }
+}
