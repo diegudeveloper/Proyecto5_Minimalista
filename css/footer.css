@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+footer {
+    width: 100%;
+    background-color: #414141;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .firma {
+    width: 100%;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+footer .firma .letter {
+    font-size: 20px;
+    color: #f7e811;
+    font-weight: 700;
+}
