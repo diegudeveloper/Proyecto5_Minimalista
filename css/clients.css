@@ -14,6 +14,7 @@
     height: 100%;
 
     display: flex;
+    flex-wrap: wrap;
 }
 
 .client .container_client .container_text {
@@ -98,4 +99,27 @@
         width: 30%;
         
     }
+}
+
+@media screen and (max-width: 450px) {
+    .client .container_client .container_text {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .client .container_client .container_text p {
+        padding-bottom: 30px;
+    }
+
+    .client .container_client .container_text a {
+        margin-left: 35%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .client .container_client .container_logos {
+        width: 100%;
+        padding-top: 0;
+    }
+
 }

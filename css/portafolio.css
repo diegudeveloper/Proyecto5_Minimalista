@@ -55,4 +55,15 @@
     box-shadow: 10px 5px 5px 0 rgba(43,55,96,1);
 }
 
+@media screen and (max-width: 450px) {
+
+    .portafolio {
+        padding-bottom: 45px;
+    }
+
+    .portafolio .container_portafolio .porta {
+        width: 90%;
+    }
+}
+
 
