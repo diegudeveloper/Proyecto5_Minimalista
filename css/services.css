@@ -60,7 +60,6 @@
 
 .services .container_card .imgmain {
     width: 60px;
-    /*width: 100%;*/
 }
 
 
@@ -101,13 +100,24 @@
 
 @media screen and (max-width: 450px) {
 
+    .services {
+        padding-bottom: 30px;
+    }
+
     .services .container_card .card {
-        width: 50%;
+        width: 75%;
+        max-width:75%;
+        height: 170px;
+        max-height: 170px;
+        margin-bottom: 60px;
+        border: 1px solid #000;
+        border-radius: 5px;
     }
 
     .services .container_card .imgmain {
         width: 20%;
         margin-left: 40%;
+        padding-top: 15px;
     }
 }
 
@@ -120,13 +130,6 @@
 
     .services p {
         width: 90%;
-    }
-
-    .services .container_card .card {
-        width: 90%;
-        margin-bottom: 60px;
-        border: 1px solid #000;
-        border-radius: 5px;
     }
 
     .services .container_card .imgmain {

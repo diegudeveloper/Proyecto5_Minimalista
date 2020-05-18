@@ -57,6 +57,10 @@
 /*****media queri*****/
 
 @media screen and (max-width: 768px) {
+    
+    .aboutus {
+        padding-top: 30px;
+    }
     .aboutus h2 {
         padding-top: 60px;
     }

@@ -7,6 +7,7 @@
 .client {
     width: 100%;
     height: auto;
+    padding-bottom: 40px;
 }
 
 .client .container_client {
@@ -120,6 +121,20 @@
     .client .container_client .container_logos {
         width: 100%;
         padding-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .client .container_client .container_logos .golo {
+        width: 100%;
+        height: auto;
+    }
+
+    .client .container_client .container_logos .golo:nth-child(9) {
+        width: 70%;
+        padding-left: 20%;
     }
 
 }

@@ -31,26 +31,24 @@ header .banner img {
 }
 
 header .iconmenu {
-    width: 90%;
+    width: 100%;
     position: absolute;
     top: 30px;
-    left: 100px;
+    padding-left: 20px;
 }
 
 header .iconmenu img {
     width: 30px;
 }
 
-header .iconmenu #btn-menu {
-    /*display: none;*/
-}
 
 header .intro {
     position: absolute;
-    width: 50%;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     top: 20%;
-    left: 25%;
+    left: 0;
     transform: translateX(-50% -50%);
     text-align: center;
 }
@@ -85,7 +83,7 @@ header .intro .main {
     width: 100%;
     text-transform: uppercase;
     letter-spacing: 15px;
-    font-size: 60px;
+    font-size: 4vw;
     font-weight: 700;
 }
 
@@ -122,12 +120,25 @@ header .intro .year {
 
 /***** menu *****/ 
 
+header .iconmenu input {
+    display: none;
+}
+
+header .iconmenu .bottom {
+    display: block;
+    width: 100%;
+    display: none;
+}
+
 .menu {
     width: 100%;
     height: 10vh;
     -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    position: absolute;
+    top: 86vh;
+    left: 0;
 }
 
 .menu .main-menu {
@@ -146,12 +157,19 @@ header .intro .year {
     align-items: center;
 }
 
+.menu .main-menu ul li {
+    width: 100%;
+    z-index: 90;
+}
+
 .menu .main-menu ul li a{
+    width: 100%;
     text-decoration: none;
     text-transform: uppercase;
     color: #000;
     font-weight: 300;
 }
+
 
 .menu .main-menu ul li .main_t {
     width: 10px;
@@ -173,6 +191,7 @@ header .intro .year {
         width: 20%;
     }
 }
+
 
 @media screen and (max-width: 768px) {
 
@@ -203,6 +222,19 @@ header .intro .year {
         font-weight: 300;
         letter-spacing: 3px;
     }
+
+    .menu {
+        width: 100%;
+        height: 8vh;
+        top: 55vh;
+        left: 0;
+    }
+
+    .menu .main-menu ul li .main_t {
+        line-height: 9vh;
+        border: 1px solid #000;
+        
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -229,73 +261,43 @@ header .intro .year {
     header .intro .ptex {
         margin-right: 30px;
     }
-}
 
-@media screen and (max-width: 450px) {
-
-    header .intro .star2 {
-        font-size: 14px;
+    header .iconmenu .bottom {
+        display: block;
     }
 
-    header .intro .ptex {
-        font-size: 14px;
-        margin-right: 20px;
-    }
-
-}
-
-@media screen and (max-width: 375px) {
-
-    header {
-        position: relative;
-    }
-
-    header .iconmenu {
-        position: absolute;
-        width: 50%;
-        left: 30px;
-    }
-
-    header .intro .star2 {
-        font-size: 12px;
-        padding: 5px 5px;
-        letter-spacing: 2px;
-    }
-
-    header .intro .ptex {
-        margin-right: 30px;
-    }
 
     .menu {
         width: 100%;
         height: 60vh;
         position: absolute;
-        top: 10vh;
+        top: 5vh;
         left: 0;
+        z-index: 10;
 
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
     }
 
-    .menu .main-menu ul {
-        height: 60vh;
-        top: 10vh;
-        flex-direction: column;
-        align-items: flex-start;
-    } 
-
     .menu .main-menu {
         width: 100%;
         height: 60vh;
-        position: absolute;
-        top: 0;
+        top: 5vh;
         left: 0px;
 
         background-color: #000;
         transform: translateX(-100%);
         transition: all 1s ease;
     }
+
+    .menu .main-menu ul {
+        width: 100%;
+        height: 60vh;
+        top: 5vh;
+        flex-direction: column;
+        align-items: flex-start;
+    } 
 
     .menu .main-menu ul li {
         width: 100%;
@@ -324,3 +326,57 @@ header .intro .year {
     }
 
 }
+
+
+@media screen and (max-width: 450px) {
+
+
+    header .intro .star2 {
+        font-size: 12px;
+    }
+
+    header .intro .ptex {
+        font-size: 14px;
+        margin-right: 20px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    header {
+        position: relative;
+    }
+
+    header .iconmenu {
+        position: relative;
+        width: 100%;
+        top: -95%;
+    }
+
+    header .intro .star2 {
+        font-size: 12px;
+        padding: 5px 5px;
+        letter-spacing: 2px;
+    }
+
+    header .intro .ptex {
+        margin-right: 30px;
+    }
+}
+
+/*** horizontal movil***/
+
+@media screen and (max-width: 763px) {
+
+    header .intro {
+        top: 18%;
+    }
+
+    header .intro .main {
+        font-size: 40px;
+    }
+}
+   
+    
+    
